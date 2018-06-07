@@ -16,3 +16,4 @@ before_script:
   - (cargo install mdbook --vers 0.1.5 --force || true)
 script:
   - bash ci/build.sh
+  - bash ci/github_pages.sh
