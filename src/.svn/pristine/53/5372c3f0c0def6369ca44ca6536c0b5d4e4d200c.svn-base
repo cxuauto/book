@@ -1,0 +1,51 @@
+#menu-bar {
+    position: -webkit-sticky
+    position: sticky
+    top: 0
+    z-index: 101
+
+    & > #menu-bar-sticky-container {
+        display: flex
+        flex-wrap: wrap
+        .js & {
+            transition: transform 0.3s
+        }
+    }
+
+    i, .icon-button {
+        position: relative
+        margin: 0 10px
+        z-index: 10
+        line-height: 50px
+        cursor: pointer
+        transition: color 0.5s
+    }
+
+    #print-button {
+        margin: 0 15px
+    }
+}
+
+html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-container {
+    transform: translateY(-60px);
+}
+
+.no-js .left-buttons {
+    display: none
+}
+
+.menu-title {
+    display: inline-block
+    font-weight: 200
+    font-size: 20px
+    line-height: 50px
+    text-align: center
+    margin: 0
+    flex: 1
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    .js & {
+        cursor: pointer
+    }
+}
