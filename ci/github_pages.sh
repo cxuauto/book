@@ -5,8 +5,7 @@ set -ex
 
 # Only run this on the master branch for stable
 if [ "$TRAVIS_BRANCH" != "master" ] ||
-   [ "$TRAVIS_RUST_VERSION" != "stable" ] ||
-   [ "$TARGET" != "x86_64-unknown-linux-gnu" ]; then
+   [ "$TRAVIS_RUST_VERSION" != "stable" ]; then
    exit 0
 fi
 
