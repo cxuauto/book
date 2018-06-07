@@ -52,7 +52,8 @@ itertools = "0.7"
 shlex = "0.1"
 toml-query = "0.6"
 
-
+[build-dependencies]
+error-chain = "0.11"
 
 # Search feature
 elasticlunr-rs = { version = "2.2", optional = true, default-features = false }

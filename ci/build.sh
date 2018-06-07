@@ -21,14 +21,14 @@ cargo run -- ../../2018-edition/src
 
 cd ../..
 
-# tests for the first edition
-cd first-edition
-echo 'Testing first edition...'
-mdbook test
-echo 'Building first edition...'
-mdbook build
+# # tests for the first edition
+# cd first-edition
+# echo 'Testing first edition...'
+# mdbook test
+# echo 'Building first edition...'
+# mdbook build
 
-cd ..
+# cd ..
 
 # tests for the second edition
 cd second-edition
@@ -43,13 +43,13 @@ cargo run --bin lfp src
 
 cd ..
 
-# tests for the 2018 edition
-cd 2018-edition
-echo 'Spellchecking 2018 edition...'
-bash ../ci/spellcheck.sh list
-echo 'Testing 2018 edition...'
-mdbook test
-echo 'Building 2018 edition...'
-mdbook build
-echo 'Linting 2018 edition for local file paths...'
-cargo run --bin lfp src
+# # tests for the 2018 edition
+# cd 2018-edition
+# echo 'Spellchecking 2018 edition...'
+# bash ../ci/spellcheck.sh list
+# echo 'Testing 2018 edition...'
+# mdbook test
+# echo 'Building 2018 edition...'
+# mdbook build
+# echo 'Linting 2018 edition for local file paths...'
+# cargo run --bin lfp src
